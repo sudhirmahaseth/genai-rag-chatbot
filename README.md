@@ -139,8 +139,7 @@ docker run -p 8501:8501 -e OPENAI_API_KEY=your_key rag-chatbot
 
 ## 📸 Demo
 
-> Add your screenshot here
-> Example:
+![RAG Chatbot Demo](docs/demo.png)
 
 ```bash
 /docs/demo.png
