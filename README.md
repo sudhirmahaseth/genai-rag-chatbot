@@ -22,16 +22,15 @@ Built with modern GenAI stack: **LangChain + FAISS + OpenAI + Streamlit + Docker
 
 ```mermaid
 flowchart TD
-    A[User Upload PDF] --> B[Document Loader]
-    B --> C[Text Splitter]
-    C --> D[Embeddings (OpenAI)]
-    D --> E[FAISS Vector Store]
-    
-    F[User Query] --> G[Retriever]
-    G --> E
-    E --> G
-    G --> H[LLM (OpenAI)]
-    H --> I[Response to User]
+    A[Upload PDF] --> B[Loader]
+    B --> C[Splitter]
+    C --> D[Embeddings]
+    D --> E[FAISS DB]
+
+    Q[User Query] --> R[Retriever]
+    R --> E
+    R --> L[LLM]
+    L --> O[Answer]
 ```
 
 ---
